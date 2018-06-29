@@ -1,3 +1,9 @@
+/* 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
 'use strict'
 
 /*
@@ -10,7 +16,15 @@
  * @notions Functions, If-Else
  */
 
-// Your code :
+function sign(nb)
+{
+    if(nb > 0)
+        return 1
+    if(nb < 0)
+        return -1
+    if(nb === 0)
+        return 0
+}
 
 //* Begin of tests
 const assert = require('assert')
@@ -24,3 +38,4 @@ assert.strictEqual(sign(10), 1)
 assert.strictEqual(sign(0), 0)
 assert.strictEqual(sign(132), 1)
 // End of tests */
+

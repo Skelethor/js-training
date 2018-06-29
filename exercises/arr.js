@@ -1,3 +1,8 @@
+/* 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 'use strict'
 
 /*
@@ -6,7 +11,7 @@
  * @notions Data-Structures
  */
 
-// Your code :
+let arr=[4, "2"];
 
 //* Begin of tests
 const assert = require('assert')
@@ -16,3 +21,4 @@ assert.strictEqual(arr[0], 4)
 assert.strictEqual(arr[1], '2')
 assert.strictEqual(arr.length, 2)
 // End of tests */
+

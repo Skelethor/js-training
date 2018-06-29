@@ -1,3 +1,10 @@
+/* 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+
 'use strict'
 
 /*
@@ -7,7 +14,19 @@
  * @notions Functions, If-Else
  */
 
-// Your code :
+function sameSign(a, b)
+{
+    if(a === 0 && b === 0)
+        return true
+    if((a === 0 || b === 0))
+        return false
+    
+    if(a > 0 && b > 0)
+        return true
+    if(a < 0 && b < 0)
+        return true
+    return false
+}
 
 //* Begin of tests
 const assert = require('assert')
@@ -17,7 +36,7 @@ assert.strictEqual(sameSign.length, 2)
 assert.notStrictEqual(sameSign, Math.sameSign)
 assert.strictEqual(sameSign(-2, -1), true)
 assert.strictEqual(sameSign(0, 0), true)
-assert.strictEqual(sameSign(12, 3232), true)
+assert.strictEqual(sameSign(12, 3232), true);
 assert.strictEqual(sameSign(1, -1), false)
 assert.strictEqual(sameSign(-231, 1), false)
 assert.strictEqual(sameSign(-231, 0), false)

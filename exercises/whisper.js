@@ -1,3 +1,9 @@
+/* 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
 'use strict'
 
 /*
@@ -6,10 +12,15 @@
  * and wrapped by `*`
  *
  */
-
+function whisper(str)
+{
+    return "*"+str.toLowerCase()+"*"
+}
 
 //* Begin of tests
 const assert = require('assert')
 
-assert.fail('You must write your own tests')
+assert.strictEqual(typeof whisper, 'function')
+assert.strictEqual(whisper.length, 1)
+assert.deepStrictEqual(whisper("Test"), "*test*")
 // End of tests */

@@ -1,3 +1,10 @@
+/* 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+
 'use strict'
 
 /*
@@ -7,6 +14,11 @@
  *
  */
 
+function capitalize(string)
+{
+    return string.charAt(0).toUpperCase() + string.substring(1).toLowerCase();
+}
+//console.log(capitalize("test"));
 
 //* Begin of tests
 const assert = require('assert')

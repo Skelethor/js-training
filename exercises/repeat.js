@@ -8,6 +8,19 @@
  *
  */
 
+function repeat(str, nb)
+{
+    if(nb === 0)
+        return ""
+    let cpt = 0;
+    let tmp = ""
+    while(cpt < nb)
+    {
+        tmp += str
+        cpt++;
+    }
+    return tmp;
+}
 //* Begin of tests
 const assert = require('assert')
 
@@ -20,3 +33,4 @@ assert.strictEqual(repeat('pouet', 2), 'pouetpouet')
 assert.strictEqual(repeat('haha', 1), 'haha')
 assert.strictEqual(repeat('hehehe', 0), '')
 // End of tests */
+

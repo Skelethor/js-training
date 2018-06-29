@@ -6,7 +6,10 @@
  * @notions Functions, Operators
  */
 
-// Your code :
+function concatStr(str1, Str2)
+{
+    return str1+Str2;
+}
 
 //* Begin of tests
 const assert = require('assert')

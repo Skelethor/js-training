@@ -12,9 +12,28 @@
  *
  */
 
+function keepFirst(str)
+{
+    return str.substring(0, 2);
+}
 
+function keepLast(str)
+{
+    return str.substring(str.length-2)
+}
+
+function keepFirstLast(str)
+{
+    return str.substring(2, 4)
+}
 //* Begin of tests
 const assert = require('assert')
 
-assert.fail('You must write your own tests')
+assert.strictEqual(typeof keepFirst, "function");
+assert.strictEqual(typeof keepLast, "function");
+assert.strictEqual(typeof keepFirstLast, "function");
+assert.strictEqual(keepFirst('str'), 'st');
+assert.strictEqual(keepLast('qsdqsdqsd'), 'sd');
+assert.strictEqual(keepFirstLast('STRing'), 'Ri');
+assert.strictEqual(keepFirstLast('zapZAP'), 'pZ');
 // End of tests */

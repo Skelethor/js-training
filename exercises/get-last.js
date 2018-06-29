@@ -7,7 +7,10 @@
  * @notions Data-Structures, Get
  */
 
-// Your code :
+function getLast(table)
+{
+    return table[table.length-1];
+}
 
 //* Begin of tests
 const assert = require('assert')

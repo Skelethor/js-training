@@ -1,3 +1,9 @@
+/* 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
 'use strict'
 
 /*
@@ -5,7 +11,15 @@
  * and return the total
  *
  */
-
+function total(t)
+{
+    let max = t.length
+    let result = 0;
+    
+    for(let i=0;i<max;i++)
+        result += t[i]
+    return result
+}
 
 //* Begin of tests
 const assert = require('assert')

@@ -1,3 +1,10 @@
+/* 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+
 'use strict'
 
 /*
@@ -6,7 +13,10 @@
  * @notions Primitive and Operators, Functions
  */
 
-// Your code :
+function sub(a, b)
+{
+    return a-b
+}
 
 //* Begin of tests
 const assert = require('assert')

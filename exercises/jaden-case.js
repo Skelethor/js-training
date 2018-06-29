@@ -10,10 +10,28 @@
  *
  */
 
+function jadenCase(str)
+{
+    let tab = str.split(" ");
+    let chaine = "";
+    let max = tab.length;
+    for(let i=0; i<max; i++)
+        if(i===max-1)
+            chaine += mettreMaj(tab[i]);
+        else
+            chaine += mettreMaj(tab[i])+" ";
+    return chaine;
+}
 
+function mettreMaj(str)
+{
+    return str.charAt(0).toUpperCase()+str.slice(1).toLowerCase();
+}
 
 //* Begin of tests
 const assert = require('assert')
 
-assert.fail('You must write your own tests')
+assert.strictEqual(typeof jadenCase, 'function')
+assert.strictEqual(jadenCase('pouet pouet pouet'), 'Pouet Pouet Pouet')
+assert.strictEqual(jadenCase('pouet poueT pouet'), 'Pouet Pouet Pouet')
 // End of tests */
